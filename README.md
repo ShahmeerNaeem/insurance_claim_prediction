@@ -6,9 +6,13 @@ A hands-on data science project to predict whether a customer is likely to make 
 
 ## 📌 Problem Statement
 
-> **Objective:** Predict whether a customer will make a claim based on features like age, BMI, number of children, smoking status, and region.
-
 The original dataset does **not contain a claim label**, so I engineered a binary target (`will_claim`) using domain logic, assuming that individuals with insurance charges **above the mean** are likely to have made a claim.
+
+---
+
+## 🎯 Goal
+
+> Predict whether a customer is likely to make an insurance claim, based on personal and policy-related attributes.
 
 ---
 
