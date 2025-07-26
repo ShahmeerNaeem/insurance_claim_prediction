@@ -12,7 +12,7 @@ The original dataset does **not contain a claim label**, so I engineered a binar
 
 ## 🎯 Goal
 
-> Predict whether a customer is likely to make an insurance claim, based on personal and policy-related attributes.
+Predict whether a customer is likely to make an insurance claim, based on personal and policy-related attributes.
 
 ---
 
@@ -34,3 +34,20 @@ The original dataset does **not contain a claim label**, so I engineered a binar
   
 ```python
 df['will_claim'] = (df['charges'] > df['charges'].mean()).astype(int)
+```
+---
+
+## 🧠 Key Takeaways
+
+- ✅ **Created a custom target label** (`will_claim`) using domain-driven logic by applying a threshold on medical `charges` — a key example of real-world **feature engineering**.
+
+- ✅ **Chose logistic regression** instead of linear regression due to the **binary classification** nature of the problem, and to obtain **interpretable probabilities**.
+
+- ✅ **Interpreted model outputs** using **odds ratios**, helping quantify how much each feature (like smoking status or age) increases or decreases the likelihood of a claim.
+
+- ✅ **Evaluated model performance** with **accuracy, precision, and recall**, demonstrating not just how accurate the model was, but how reliable and sensitive it was to claim predictions.
+
+- ✅ **Visualized model behavior** through scatter plots of predicted probabilities by features like age and smoker status, making insights easier to understand and communicate.
+
+---
+
